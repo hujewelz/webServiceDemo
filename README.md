@@ -81,6 +81,7 @@
 ![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/12.PNG)<br>
 	在URL中输入我们发布的WebService的URL地址,系统会自动搜索到服务.并且为Web引用设置一个引用名.此引用名将是
 	我们在项目中引用这个服务的命名空间，点击添加引用,引用完成。
+##
 	4.接下来,我们在WebForm1的cs文件中写如下代码
 		protected void Page_Load(object sender, EventArgs e)
 	        {
