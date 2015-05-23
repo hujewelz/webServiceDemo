@@ -1,20 +1,26 @@
 ﻿body {
-    
+    background:url("../images/bg.jpeg") no-repeat;
 }
 
 div.header {
    height: 80px;
-   
-   background-color: blue;
 }
 
 
 .content {
-    background-color: green;
-    margin-left:0px auto ;
-    margin-top:0px ;
-    vertical-align:middle;
-   float: left
 
-    
+    margin-left:0px auto;
+    vertical-align:middle;
+   
 }
+
+table {
+    margin: 250px;
+}
+
+.auto-style2 {
+    height: 50px;
+}
+
+
+

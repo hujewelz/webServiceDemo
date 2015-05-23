@@ -10,7 +10,7 @@ namespace WeatherForecast
 {
     public partial class Weather : System.Web.UI.Page
     {
-        private string path = @"~\icon\";
+        private string path = @"~\images\icon\";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -21,7 +21,7 @@ namespace WeatherForecast
             WeatherWebService weatherS = new WeatherWebService();
             string[] result = new string[23];
             string city = City.Text.Trim();
-            result = weatherS.getWeatherbyCityName("北京");
+            result = weatherS.getWeatherbyCityName(city);
             if (result[8] == "")
             {
            
@@ -32,8 +32,7 @@ namespace WeatherForecast
                 WeatherImage.ImageUrl = path+ result[8] + "";
                 WeatherGeneral.Text = result[1] + "" + result[6];
                 WeatherDesc.Text = result[10];
-               //Weatherge// = s[1] + " " + s[6];
-                //textBox2.Text = s[10];
+              
             }  
 
         }
