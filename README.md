@@ -3,7 +3,7 @@
 
 #WebService 的创建,部署和使用
 测试环境：Windows10 
-I. 配置自己的IIS服务器
+#I. 配置自己的IIS服务器
 	1.打开控制面板 -> 程序 -> 启用或关闭Windows功能
 	2.这里我们找到internet信息服务，将Web管理工具和万维网服务选中。
 	  要调试 ASP.net 当然要安装IIS支持 ASP.net 的组件了。选择好了后点击确定就等他安装好 。
@@ -18,7 +18,7 @@ I. 配置自己的IIS服务器
 	  ![image](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/04.png)
 	6.选择应用池，再选择刚刚建立的网站，双击鼠标，将framework改为4.0版本的。
 	至此IIS服务器就配好了。现在打开Microsoft Visual Studio 2012开始下一步吧。
-II. WebService的创建和部署
+#II. WebService的创建和部署
 	1.打开VS2012,新建空项目,注意选择.NET Framework的版本.这里我选择的是.NET Framework 4。
 	2.新建好项目后,在项目中添加一个Web服务。
 	  ![image](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/05.png)
@@ -60,7 +60,7 @@ II. WebService的创建和部署
 	  http://192.168.1.112/cal/calService.asmx
 	  ![image](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/09.png)
 	  此时我们已经完成了这个WebService的创建和部署.接下来,我们要在本地使用它。
-III. WebService的发布
+#III. WebService的发布
 	1.打开VS2012,新建项目，项目名为WebCalculator。
 	2.在项目中添加新建项，选择Web窗体。
 	3.在项目中引用项上点击右键,选择添加服务引用,显示界面如下:
