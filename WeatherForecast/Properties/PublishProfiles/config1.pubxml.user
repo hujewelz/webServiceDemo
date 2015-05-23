@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/WeatherForecast.dll">
+      <publishTime>05/23/2015 12:37:53</publishTime>
+    </File>
+    <File Include="bin/WeatherForecast.XmlSerializers.dll">
+      <publishTime>05/23/2015 12:37:55</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>05/23/2015 12:37:52</publishTime>
+    </File>
+    <File Include="Properties/DataSources/System.Data.DataSet.datasource">
+      <publishTime>05/23/2015 10:47:41</publishTime>
+    </File>
+    <File Include="Properties/Settings.settings">
+      <publishTime>05/23/2015 11:23:02</publishTime>
+    </File>
+    <File Include="Weather.aspx">
+      <publishTime>05/23/2015 11:59:51</publishTime>
+    </File>
+    <File Include="Web References/WeatherService/Reference.map">
+      <publishTime>05/23/2015 11:23:01</publishTime>
+    </File>
+    <File Include="Web References/WeatherService/WeatherWebService.disco">
+      <publishTime>05/23/2015 11:23:01</publishTime>
+    </File>
+    <File Include="Web References/WeatherService/WeatherWebService.wsdl">
+      <publishTime>05/23/2015 11:23:01</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/23/2015 12:37:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

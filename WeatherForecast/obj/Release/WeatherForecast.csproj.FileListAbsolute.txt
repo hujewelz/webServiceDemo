@@ -1,0 +1,7 @@
+c:\users\hunte\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\bin\WeatherForecast.dll
+c:\users\hunte\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\bin\WeatherForecast.XmlSerializers.dll
+c:\users\hunte\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\bin\WeatherForecast.pdb
+c:\users\hunte\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\obj\Release\WeatherForecast.csprojResolveAssemblyReference.cache
+c:\users\hunte\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\obj\Release\WeatherForecast.dll
+c:\users\hunte\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\obj\Release\WeatherForecast.pdb
+c:\users\hunte\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\obj\Release\WeatherForecast.XmlSerializers.dll

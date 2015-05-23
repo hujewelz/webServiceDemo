@@ -1,0 +1,5 @@
+c:\users\hunte\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\bin\WeatherForecast.dll
+c:\users\hunte\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\bin\WeatherForecast.pdb
+c:\users\hunte\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\obj\Debug\WeatherForecast.csprojResolveAssemblyReference.cache
+c:\users\hunte\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\obj\Debug\WeatherForecast.dll
+c:\users\hunte\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\obj\Debug\WeatherForecast.pdb

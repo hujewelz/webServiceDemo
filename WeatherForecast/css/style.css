@@ -1,0 +1,20 @@
+﻿body {
+    
+}
+
+div.header {
+   height: 80px;
+   
+   background-color: blue;
+}
+
+
+.content {
+    background-color: green;
+    margin-left:0px auto ;
+    margin-top:0px ;
+    vertical-align:middle;
+   float: left
+
+    
+}
