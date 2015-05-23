@@ -3,25 +3,25 @@
 #WebService 的创建,部署和使用
 测试环境：Windows10 
 #I. 配置自己的IIS服务器
-	1.打开控制面板 -> 程序 -> 启用或关闭Windows功能
-	2.这里我们找到internet信息服务，将Web管理工具和万维网服务选中。
-	  要调试 ASP.net 当然要安装IIS支持 ASP.net 的组件了。选择好了后点击确定就等他安装好 。
+ 1.打开控制面板 -> 程序 -> 启用或关闭Windows功能
+ 2.这里我们找到internet信息服务，将Web管理工具和万维网服务选中。
+  要调试 ASP.net 当然要安装IIS支持 ASP.net 的组件了。选择好了后点击确定就等他安装好 。
  ![image](https://raw.githubusercontent.com/hujewelz/webServiceDemo/master/screenshot/01.PNG)
-	3.安装好组件后需要重启才能够工作正常。重启好后 我们开始配置IIS。
-	4.桌面我的电脑，右键管理，打开计算机管理面板，展开左侧“服务和应用程序”。
-	  ![image text](https://raw.githubusercontent.com/hujewelz/webServiceDemo/master/screenshot/02.PNG)
-	5.右击网站，选择添加网站选项，在弹出的窗口中填入网站的名称，存放位置，注意：存放的位置
-	  和VS2012建立的开发文件夹是不同的，所以在这之前我们需要新建一个文件夹。
+ 3.安装好组件后需要重启才能够工作正常。重启好后 我们开始配置IIS。
+ 4.桌面我的电脑，右键管理，打开计算机管理面板，展开左侧“服务和应用程序”。
+ ![image text](https://raw.githubusercontent.com/hujewelz/webServiceDemo/master/screenshot/02.PNG)
+ 5.右击网站，选择添加网站选项，在弹出的窗口中填入网站的名称，存放位置，注意：存放的位置
+  和VS2012建立的开发文件夹是不同的，所以在这之前我们需要新建一个文件夹。
  ![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/03.PNG)
-	  图中的物理路径就是我们刚刚建立的文件夹。点击确定后就会看见自己新建的网站已经显示了。
+ 图中的物理路径就是我们刚刚建立的文件夹。点击确定后就会看见自己新建的网站已经显示了。
  ![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/04.PNG)
-	6.选择应用池，再选择刚刚建立的网站，双击鼠标，将framework改为4.0版本的。
-	至此IIS服务器就配好了。现在打开Microsoft Visual Studio 2012开始下一步吧。
+ 6.选择应用池，再选择刚刚建立的网站，双击鼠标，将framework改为4.0版本的。
+ 至此IIS服务器就配好了。现在打开Microsoft Visual Studio 2012开始下一步吧。
 #II. WebService的创建和部署
-	1.打开VS2012,新建空项目,注意选择.NET Framework的版本.这里我选择的是.NET Framework 4。
-	2.新建好项目后,在项目中添加一个Web服务。
-![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/05.PNG)
-	3.打开这个文件,将HellowWorld这段代码删除,修改后如下
+ 1.打开VS2012,新建空项目,注意选择.NET Framework的版本.这里我选择的是.NET Framework 4。
+ 2.新建好项目后,在项目中添加一个Web服务。
+ ![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/05.PNG)
+ 3.打开这个文件,将HellowWorld这段代码删除,修改后如下
 	    [WebMethod]
         public double sum(double a, double b)
         {
@@ -45,17 +45,17 @@
         {
             return a / b;
         }
-	4.此时,我们已经完成这个WebService的代码部分.接下来我们要将这个WebService打包发布。
-	  在项目上点击右键,点击菜单中的发布。
-	  在下拉菜单选择新建配置文件，取个名字，下一步。目标位置为上一节中建立的文件夹
- ![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/06.PNG)
+4.此时,我们已经完成这个WebService的代码部分.接下来我们要将这个WebService打包发布。
+ 在项目上点击右键,点击菜单中的发布。
+ 在下拉菜单选择新建配置文件，取个名字，下一步。目标位置为上一节中建立的文件夹
+![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/06.PNG)
 ![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/07.PNG)
-	  直接下一步
-	  完成以上步骤后,我们可以在设置文件生成的文件夹内看到生成的以下文件
+直接下一步
+完成以上步骤后,我们可以在设置文件生成的文件夹内看到生成的以下文件
 ![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/08.PNG)
-	  这里我在上一节中新建的虚拟目录下建立了一个cal文件夹，我们要把cal下的bin文件移到虚拟目录根目录下，
-	  并且为cal文件夹设置匿名权限.
-	  添加完毕,启动网站,此时可以关闭与服务器的连接了.
+这里我在上一节中新建的虚拟目录下建立了一个cal文件夹，我们要把cal下的bin文件移到虚拟目录根目录下，
+并且为cal文件夹设置匿名权限.
+添加完毕,启动网站,此时可以关闭与服务器的连接了.
 	  在本地的浏览器中输入地址
 	  http://192.168.1.112/cal/calService.asmx
 ![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/09.PNG)
