@@ -7,10 +7,10 @@
 	1.打开控制面板 -> 程序 -> 启用或关闭Windows功能
 	2.这里我们找到internet信息服务，将Web管理工具和万维网服务选中。
 	  要调试 ASP.net 当然要安装IIS支持 ASP.net 的组件了。选择好了后点击确定就等他安装好 。
-	  ![Image text](https://raw.githubusercontent.com/hujewelz/webServiceDemo/master/screenshot/01.PNG)
+	  ![image](https://raw.githubusercontent.com/hujewelz/webServiceDemo/master/screenshot/01.PNG)
 	3.安装好组件后需要重启才能够工作正常。重启好后 我们开始配置IIS。
 	4.桌面我的电脑，右键管理，打开计算机管理面板，展开左侧“服务和应用程序”。
-	  ![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/02.PNG)
+	  ![image text](https://raw.githubusercontent.com/hujewelz/webServiceDemo/master/screenshot/02.PNG)
 	5.右击网站，选择添加网站选项，在弹出的窗口中填入网站的名称，存放位置，注意：存放的位置
 	  和VS2012建立的开发文件夹是不同的，所以在这之前我们需要新建一个文件夹。
 	 ![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/03.PNG)
