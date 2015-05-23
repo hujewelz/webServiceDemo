@@ -56,20 +56,18 @@
 	  在下拉菜单选择新建配置文件，取个名字，下一步。目标位置为上一节中建立的文件夹
 	  
 ![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/06.PNG)
-![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/07.PNG)
-##
- 	直接下一步
+![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/07.PNG)<br>
+	直接下一步
  	完成以上步骤后,我们可以在设置文件生成的文件夹内看到生成的以下文件
  	
-![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/08.PNG)
-##
+![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/08.PNG)<br>
 	 这里我在上一节中新建的虚拟目录下建立了一个cal文件夹，我们要把cal下的bin文件移到虚拟目录根目录下，
 	 并且为cal文件夹设置匿名权限.
 	 添加完毕,启动网站,此时可以关闭与服务器的连接了.
 	  在本地的浏览器中输入地址
 	  http://192.168.1.112/cal/calService.asmx
 	  
-	![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/09.PNG)
+	![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/09.PNG)<br>
 	 此时我们已经完成了这个WebService的创建和部署.接下来,我们要在本地使用它。
 ##III. WebService的发布
   	1.打开VS2012,新建项目，项目名为WebCalculator。
@@ -77,10 +75,9 @@
   	3.在项目中引用项上点击右键,选择添加服务引用,显示界面如下:
 ![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/10.PNG)<br>
 	点击左下角的高级,出现界面如下<br>
-![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/11.PNG)
+![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/11.PNG)<br>
 	点击添加Web引用,出现界面如下<br>
-![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/12.PNG)
-##
+![Image text](https://github.com/hujewelz/webServiceDemo/raw/master/screenshot/12.PNG)<br>
 	在URL中输入我们发布的WebService的URL地址,系统会自动搜索到服务.并且为Web引用设置一个引用名.此引用名将是
 	我们在项目中引用这个服务的命名空间，点击添加引用,引用完成。
 	4.接下来,我们在WebForm1的cs文件中写如下代码
@@ -91,8 +88,7 @@
             		double b = 114;  
             		Response.Write(calS.sum(a, b).ToString());  
 	        }
-	接下来,在浏览器中运行该项目即可。
-	此时我们已经完成了这个WebService的使用过程。
+###接下来,在浏览器中运行该项目即可。此时我们已经完成了这个WebService的使用过程。
 	
 	  
 	
